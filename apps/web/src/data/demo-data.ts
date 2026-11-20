@@ -1,0 +1,138 @@
+import type { ActivityItem, Patient, ReviewItem } from './types';
+
+export const demoPatients: Patient[] = [
+  {
+    id: 'DEMO-1042',
+    name: 'Jordan Ellis',
+    age: 42,
+    registeredAt: 'Nov 14, 2025',
+    familyHistory: 'Recorded',
+    reviewStatus: 'Awaiting review',
+    informationNote: 'Some reported family relationships have not yet been verified.',
+  },
+  {
+    id: 'DEMO-1038',
+    name: 'Riley Chen',
+    age: 36,
+    registeredAt: 'Nov 12, 2025',
+    familyHistory: 'In progress',
+    reviewStatus: 'Reviewed',
+    informationNote: 'Family-history details are recorded as reported by the patient.',
+  },
+  {
+    id: 'DEMO-1031',
+    name: 'Casey Patel',
+    age: 58,
+    registeredAt: 'Nov 10, 2025',
+    familyHistory: 'Recorded',
+    reviewStatus: 'Not required',
+    informationNote: 'A family-history update has not been requested.',
+  },
+  {
+    id: 'DEMO-1027',
+    name: 'Avery Brooks',
+    age: 29,
+    registeredAt: 'Nov 08, 2025',
+    familyHistory: 'Not started',
+    reviewStatus: 'Awaiting review',
+    informationNote: 'No family-history information has been entered yet.',
+  },
+  {
+    id: 'DEMO-1021',
+    name: 'Taylor Nguyen',
+    age: 47,
+    registeredAt: 'Nov 06, 2025',
+    familyHistory: 'In progress',
+    reviewStatus: 'Reviewed',
+    informationNote: 'Some family-history details are still being gathered.',
+  },
+  {
+    id: 'DEMO-1015',
+    name: 'Quinn Rivera',
+    age: 51,
+    registeredAt: 'Nov 03, 2025',
+    familyHistory: 'Recorded',
+    reviewStatus: 'Not required',
+    informationNote: 'Reported information has not been independently verified.',
+  },
+  {
+    id: 'DEMO-1012',
+    name: 'Morgan James',
+    age: 33,
+    registeredAt: 'Oct 30, 2025',
+    familyHistory: 'In progress',
+    reviewStatus: 'Awaiting review',
+    informationNote: 'Some family relationship details remain incomplete.',
+  },
+  {
+    id: 'DEMO-1008',
+    name: 'Drew Campbell',
+    age: 61,
+    registeredAt: 'Oct 28, 2025',
+    familyHistory: 'Recorded',
+    reviewStatus: 'Awaiting review',
+    informationNote: 'Additional context was requested by the care team.',
+  },
+];
+
+export const demoReviews: ReviewItem[] = [
+  {
+    id: 'DEMO-1042',
+    reason: 'Reported family-history details need verification',
+    priority: 'Follow-up',
+    status: 'Awaiting review',
+  },
+  {
+    id: 'DEMO-1027',
+    reason: 'Family-history discussion requested',
+    priority: 'Routine',
+    status: 'Awaiting review',
+  },
+  {
+    id: 'DEMO-1012',
+    reason: 'Relationship details are incomplete',
+    priority: 'Routine',
+    status: 'In review',
+  },
+  {
+    id: 'DEMO-1008',
+    reason: 'Additional context requested by care team',
+    priority: 'Time-sensitive',
+    status: 'Awaiting review',
+  },
+];
+
+export const demoActivities: ActivityItem[] = [
+  {
+    id: 'activity-1',
+    title: 'Family history updated',
+    detail: 'Riley Chen · DEMO-1038',
+    date: 'Today, 9:42 am',
+    kind: 'history',
+    patientId: 'DEMO-1038',
+  },
+  {
+    id: 'activity-2',
+    title: 'Patient registered',
+    detail: 'Jordan Ellis · DEMO-1042',
+    date: 'Yesterday, 3:18 pm',
+    kind: 'patient',
+    patientId: 'DEMO-1042',
+  },
+  {
+    id: 'activity-3',
+    title: 'Pedigree generated',
+    detail: 'Taylor Nguyen · DEMO-1021',
+    date: 'Nov 14, 2025',
+    kind: 'pedigree',
+    patientId: 'DEMO-1021',
+  },
+  {
+    id: 'activity-4',
+    title: 'Clinical review completed',
+    detail: 'Casey Patel · DEMO-1031',
+    date: 'Nov 13, 2025',
+    kind: 'review',
+    patientId: 'DEMO-1031',
+  },
+];
