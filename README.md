@@ -62,7 +62,9 @@ npm run build
 The GitHub Pages deployment is a read-only static showcase at
 <https://mzee-kenya.github.io/familygene/>. It uses synthetic sample records and does not connect
 to the Express API or persist patient registration, consent, relatives, or clinical notes. Use the
-local `npm run dev` setup for the full prototype workflow. Do not enter real patient information.
+local `npm run dev` setup for the full prototype workflow. The site is published from the `gh-pages`
+branch; its contents are generated with `npm run build:pages --workspace @familygene/web`.
+Do not enter real patient information.
 
 The API development server loads its environment from `apps/api/.env` if present. Defaults are
 provided for local development, so copying the example files is optional.

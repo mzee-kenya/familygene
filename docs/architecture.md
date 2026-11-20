@@ -35,6 +35,7 @@ collect family history is granted. Relative conditions are related through a joi
 responses include sources, explicit unknowns, missing-information indicators, notes, and history
 events; the application does not derive genetic diagnoses or risk scores.
 
-The GitHub Pages workflow builds `apps/web` with `VITE_DEMO_MODE=true` and a repository path base.
-That public build uses only synthetic in-memory fixtures, makes no API requests, and disables
-patient/consent/family-history writes. It is a read-only showcase, not a hosted full-stack service.
+The GitHub Pages static build uses `VITE_DEMO_MODE=true` and a repository path base, and is
+published from the `gh-pages` branch. It uses only synthetic in-memory fixtures, makes no API
+requests, and disables patient/consent/family-history writes. It is a read-only showcase, not a
+hosted full-stack service.
